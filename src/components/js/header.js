@@ -1,4 +1,3 @@
-// import { ref, computed } from "vue";
 import { useMainStore } from "@/store/index.js";
 import SearchModal from "@/components/SearchModal.vue";
 import Magnify from "vue-material-design-icons/Magnify.vue";
