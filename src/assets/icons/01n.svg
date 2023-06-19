@@ -1,0 +1,10 @@
+<!-- Clear moon -->
+<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.8685 8.35236C14.7831 8.39321 14.6965 8.43253 14.6088 8.47029C11.0322 10.0089 6.88558 8.35683 5.34697 4.78029C4.72056 3.32418 4.62301 1.77357 4.96889 0.342929C1.57297 1.96677 0.0378097 5.99802 1.53867 9.48681C3.07728 13.0633 7.22393 14.7154 10.8005 13.1768C12.9209 12.2646 14.3649 10.4357 14.8685 8.35236Z" fill="url(#moon-color)"/>
+<defs>
+<radialGradient id="moon-color" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.17143 2.45496) rotate(105.896) scale(14.0448 13.8244)">
+<stop stop-color="#ffe393"/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+</defs>
+</svg>
