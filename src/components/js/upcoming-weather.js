@@ -1,4 +1,3 @@
-// import { ref, computed } from "vue";
 import { useMainStore } from "@/store/index.js";
 import { computed } from "vue";
 import CalendarOutline from "vue-material-design-icons/CalendarOutline.vue";
