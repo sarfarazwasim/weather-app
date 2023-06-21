@@ -1,4 +1,5 @@
 const BASE_URL = "https://openweathermap.org/data/2.5/";
+// const APP_ID = "ad814315e7a3b3dbfd4f0049e4ff1de9";
 const APP_ID = "439d4b804bc8187953eb36d2a8c26a02";
 const UNIT = "metrics";
 
@@ -20,8 +21,8 @@ const api = {
     return `${BASE_URL}find?q=${city}&units=${UNIT}&appid=${APP_ID}`;
   },
   cityNameFromLocation: (latitude, longitude) => {
-    return `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
-  }
+    return `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+  },
 };
 
 const API_RESPONSE_CODES = {

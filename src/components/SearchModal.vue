@@ -2,11 +2,12 @@
   <div class="search-modal">
     <div class="container">
       <div class="input_wrapper">
+        <SearchIcon />
         <input
           type="text"
           :value="searchText"
           @input="(evt) => (searchText = evt.target.value)"
-          placeholder="Search a city/place"
+          placeholder="Search for city or place name"
         />
         <CircularCloseIcon v-if="searchText.trim()" @click="clearSearch" />
       </div>
@@ -24,15 +25,21 @@
             </div>
             <div class="fade-line" />
           </div>
-          <div v-if="!searchResults.length" class="empty-list">
-            <div v-if="searchText.trim()">
-              No results found
-              <div>Try another name</div>
+          <div class="empty-list">
+            <div v-if="!searchResults.length && searchText.trim().length > 2">
+              <div v-if="searchText.trim()">
+                No results found
+                <div>Try another name</div>
+              </div>
+            </div>
+            <div
+              v-else-if="
+                searchText.trim().length < 3 && searchText.trim().length > 0
+              "
+            >
+              Enter minimum 3 letters
             </div>
             <div v-else>Enter city or place name to view results</div>
-          </div>
-          <div v-else-if="searchText.trim().length < 3" class="empty-list">
-            Enter minimum 3 letters
           </div>
         </template>
       </div>
@@ -70,7 +77,6 @@
       width: 100%;
       margin: auto;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       border: none;
       background: #5c56878a;
@@ -85,12 +91,18 @@
         color: white;
         height: 24px;
         font-size: 16px;
-        padding: 4px 10px;
+        padding: 4px 10px 4px 2px;
       }
       .close-circle-outline-icon {
         margin-right: 4px;
         display: flex;
         color: #dcdcdc;
+        cursor: pointer;
+      }
+      .magnify-icon {
+        margin-left: 4px;
+        display: flex;
+        color: #757575;
         cursor: pointer;
       }
       input:focus {

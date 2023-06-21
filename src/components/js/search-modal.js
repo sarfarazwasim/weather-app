@@ -2,12 +2,14 @@ import { computed, ref, watch } from "vue";
 import { useMainStore } from "@/store/index.js";
 import CircularCloseIcon from "vue-material-design-icons/CloseCircleOutline.vue";
 import CloseIcon from "vue-material-design-icons/Close.vue";
+import SearchIcon from "vue-material-design-icons/Magnify.vue";
 export default {
   name: "SearchModal",
   emits: ["closeSearchModal"],
   components: {
     CloseIcon,
     CircularCloseIcon,
+    SearchIcon,
   },
   setup(props, context) {
     const searchText = ref("");
