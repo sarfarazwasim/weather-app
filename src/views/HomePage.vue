@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage" :class="{'disable-scroll' : showLoader}">
+  <div class="homepage" :class="{ 'disable-scroll': showLoader }">
     <div class="contents">
       <Header @refresh-data="refreshWeatherData" />
       <div class="p-right-32 p-bottom-32 p-left-32">

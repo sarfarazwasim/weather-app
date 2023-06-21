@@ -4,7 +4,7 @@
 
 <style lang="scss">
 #app {
-font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -14,7 +14,6 @@ font-family: 'Manrope', sans-serif;
 
 body {
   margin: 0;
-  font-family: Impact;
 }
 $directions: "top", "left", "bottom", "right";
 $sizes: 2, 4, 6, 8, 12, 16, 20, 24, 32, 64;

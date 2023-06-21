@@ -15,6 +15,7 @@ export const useMainStore = defineStore("mainStore", {
       name: "Bengaluru",
       country: "IN",
     },
+    isMainLoaderActive: false,
   }),
   getters: {
     iconName() {
@@ -45,20 +46,22 @@ export const useMainStore = defineStore("mainStore", {
       long = this.currentLocation.lon,
       cb
     ) {
+      this.isMainLoaderActive = true;
       const self = this;
       axios
         .get(api.byLocation(lat, long))
         .then(function (res) {
-          console.log("[byLocation] ", res.data);
           if (res.statusText === "OK") {
             self.currentWeather = res.data.current;
             self.weekData = res.data.daily;
-            cb?.()
+            self.isMainLoaderActive = false;
+            cb?.();
           }
         })
         .catch(function (error) {
           console.log(error);
-          cb?.()
+          self.isMainLoaderActive = false;
+          cb?.();
         });
     },
     searchCity(cityName, success) {
@@ -66,7 +69,6 @@ export const useMainStore = defineStore("mainStore", {
       axios
         .get(api.searchCity(cityName))
         .then(function (res) {
-          console.log("[searchCity] ", res.data);
           if (res.statusText === "OK") {
             self.searchList = res.data.list;
             success();
@@ -79,21 +81,23 @@ export const useMainStore = defineStore("mainStore", {
     },
     fetchCityName(latitude, longitude, cb) {
       const self = this;
+      self.isMainLoaderActive = true;
       axios
         .get(api.cityNameFromLocation(latitude, longitude))
         .then(function (res) {
-          console.log("[name from location] ", res.data);
           if (res.statusText === "OK") {
             self.currentCity = {
               name: res.data.city,
               country: res.data.countryCode,
-            }
+            };
             cb?.();
+            self.isMainLoaderActive = false;
           }
         })
         .catch(function (error) {
           console.log(error);
-          cb?.()
+          self.isMainLoaderActive = false;
+          cb?.();
         });
     },
   },

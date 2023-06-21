@@ -49,7 +49,6 @@ export default {
       mainStore.searchList = [];
     };
     const selectCity = (city) => {
-      console.log("[city] ", city);
       mainStore.updateCity(city);
       mainStore.updateLocation(city.coord.lat, city.coord.lon);
       mainStore.getCurrentWeatherByLocation(city.coord.lat, city.coord.lon);

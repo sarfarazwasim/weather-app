@@ -15,7 +15,7 @@ export default {
     AdditionalInfo,
     UpcomingWeather,
     DayGraph,
-    LoaderScreen
+    LoaderScreen,
   },
   setup() {
     let latitude = ref(12.9762);
@@ -42,19 +42,14 @@ export default {
     });
     const mainStore = useMainStore();
     function fetchDataViaLocation() {
-      showLoader.value = true
       mainStore.updateLocation(latitude.value, longitude.value);
-      mainStore.getCurrentWeatherByLocation(latitude.value, longitude.value, hideLoader);
-      mainStore.fetchCityName(latitude.value, longitude.value, hideLoader);
+      mainStore.getCurrentWeatherByLocation(latitude.value, longitude.value);
+      mainStore.fetchCityName(latitude.value, longitude.value);
     }
 
-    const showLoader = ref(false)
-    const hideLoader = () => {
-      showLoader.value = false
-    }
+    const showLoader = computed(() => mainStore.isMainLoaderActive);
     const refreshWeatherData = () => {
-      showLoader.value = true;
-      mainStore.getCurrentWeatherByLocation(undefined, undefined, hideLoader);
+      mainStore.getCurrentWeatherByLocation(undefined, undefined);
     };
     getUserLocation();
     return {
@@ -62,7 +57,7 @@ export default {
       getLongitude,
       getUserLocation,
       refreshWeatherData,
-      showLoader
+      showLoader,
     };
   },
 };
