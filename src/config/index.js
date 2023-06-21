@@ -19,6 +19,9 @@ const api = {
   searchCity: (city) => {
     return `${BASE_URL}find?q=${city}&units=${UNIT}&appid=${APP_ID}`;
   },
+  cityNameFromLocation: (latitude, longitude) => {
+    return `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
+  }
 };
 
 const API_RESPONSE_CODES = {

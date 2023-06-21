@@ -4,6 +4,8 @@ import Header from "@/components/Header.vue";
 import HeroSection from "@/components/HeroSection.vue";
 import AdditionalInfo from "@/components/AdditionalInfo.vue";
 import UpcomingWeather from "@/components/UpcomingWeather.vue";
+import LoaderScreen from "@/components/LoaderScreen.vue";
+import DayGraph from "@/components/DayGraph.vue";
 
 export default {
   name: "Home",
@@ -12,6 +14,8 @@ export default {
     HeroSection,
     AdditionalInfo,
     UpcomingWeather,
+    DayGraph,
+    LoaderScreen
   },
   setup() {
     let latitude = ref(12.9762);
@@ -26,6 +30,7 @@ export default {
         },
         (error) => {
           alert(error.message);
+          fetchDataViaLocation();
         }
       );
     }
@@ -37,19 +42,27 @@ export default {
     });
     const mainStore = useMainStore();
     function fetchDataViaLocation() {
+      showLoader.value = true
       mainStore.updateLocation(latitude.value, longitude.value);
-      mainStore.getCurrentWeatherByLocation(latitude.value, longitude.value);
+      mainStore.getCurrentWeatherByLocation(latitude.value, longitude.value, hideLoader);
+      mainStore.fetchCityName(latitude.value, longitude.value, hideLoader);
     }
 
+    const showLoader = ref(false)
+    const hideLoader = () => {
+      showLoader.value = false
+    }
     const refreshWeatherData = () => {
-      mainStore.getCurrentWeatherByLocation();
+      showLoader.value = true;
+      mainStore.getCurrentWeatherByLocation(undefined, undefined, hideLoader);
     };
-    fetchDataViaLocation();
+    getUserLocation();
     return {
       getLatitude,
       getLongitude,
       getUserLocation,
       refreshWeatherData,
+      showLoader
     };
   },
 };

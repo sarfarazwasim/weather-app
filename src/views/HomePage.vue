@@ -1,14 +1,14 @@
 <template>
-  <div class="homepage">
-    <!-- latitude: {{ getLatitude }}
-    longitude: {{ getLongitude }} -->
+  <div class="homepage" :class="{'disable-scroll' : showLoader}">
     <div class="contents">
       <Header @refresh-data="refreshWeatherData" />
       <div class="p-right-32 p-bottom-32 p-left-32">
         <HeroSection />
         <AdditionalInfo />
         <UpcomingWeather />
+        <!-- <DayGraph /> -->
       </div>
+      <LoaderScreen v-if="showLoader" />
     </div>
   </div>
 </template>
@@ -17,7 +17,6 @@
 
 <style lang="scss" scoped>
 .homepage {
-  // background: darkslateblue;
   background: linear-gradient(
     167.44deg,
     #08244f 0%,
@@ -30,5 +29,9 @@
     max-width: 650px;
     margin: auto;
   }
+}
+.homepage.disable-scroll {
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

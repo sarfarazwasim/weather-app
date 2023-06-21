@@ -42,7 +42,8 @@ export const useMainStore = defineStore("mainStore", {
     },
     getCurrentWeatherByLocation(
       lat = this.currentLocation.lat,
-      long = this.currentLocation.lon
+      long = this.currentLocation.lon,
+      cb
     ) {
       const self = this;
       axios
@@ -52,10 +53,12 @@ export const useMainStore = defineStore("mainStore", {
           if (res.statusText === "OK") {
             self.currentWeather = res.data.current;
             self.weekData = res.data.daily;
+            cb?.()
           }
         })
         .catch(function (error) {
           console.log(error);
+          cb?.()
         });
     },
     searchCity(cityName, success) {
@@ -72,6 +75,25 @@ export const useMainStore = defineStore("mainStore", {
         .catch(function (error) {
           success();
           console.log(error);
+        });
+    },
+    fetchCityName(latitude, longitude, cb) {
+      const self = this;
+      axios
+        .get(api.cityNameFromLocation(latitude, longitude))
+        .then(function (res) {
+          console.log("[name from location] ", res.data);
+          if (res.statusText === "OK") {
+            self.currentCity = {
+              name: res.data.city,
+              country: res.data.countryCode,
+            }
+            cb?.();
+          }
+        })
+        .catch(function (error) {
+          console.log(error);
+          cb?.()
         });
     },
   },
