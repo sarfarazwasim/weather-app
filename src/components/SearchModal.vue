@@ -25,21 +25,28 @@
             </div>
             <div class="fade-line" />
           </div>
-          <div class="empty-list">
-            <div v-if="!searchResults.length && searchText.trim().length > 2">
-              <div v-if="searchText.trim()">
-                No results found
-                <div>Try another name</div>
-              </div>
+          <div
+            v-if="!searchResults.length && searchText.trim().length > 2"
+            class="empty-list"
+          >
+            <div>
+              No results found
+              <div>Try another name</div>
             </div>
-            <div
-              v-else-if="
-                searchText.trim().length < 3 && searchText.trim().length > 0
-              "
-            >
-              Enter minimum 3 letters
-            </div>
-            <div v-else>Enter city or place name to view results</div>
+          </div>
+          <div
+            v-else-if="
+              searchText.trim().length < 3 && searchText.trim().length > 0
+            "
+            class="empty-list"
+          >
+            Enter minimum 3 letters
+          </div>
+          <div
+            v-else-if="!searchResults.length && !searchText.trim().length"
+            class="empty-list"
+          >
+            Enter city or place name to view results
           </div>
         </template>
       </div>
