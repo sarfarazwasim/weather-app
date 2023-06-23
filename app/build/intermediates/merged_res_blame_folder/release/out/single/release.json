@@ -36,12 +36,12 @@
         "source": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/res/drawable-mdpi/splash.png"
     },
     {
-        "merged": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/build/intermediates/res/merged/release/drawable-hdpi_splash.png.flat",
-        "source": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/res/drawable-hdpi/splash.png"
-    },
-    {
         "merged": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/build/intermediates/res/merged/release/drawable-hdpi_splash.png.flat",
+        "source": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/res/drawable-hdpi/splash.png"
     },
     {
         "merged": "/Users/sksarfarazwasim/Documents/Vue/weather_app/app/build/intermediates/res/merged/release/drawable-xxhdpi_splash.png.flat",
