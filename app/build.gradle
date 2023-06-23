@@ -21,11 +21,11 @@ plugins {
 }
 
 def twaManifest = [
-    applicationId: 'localhost_5000.twa',
+    applicationId: 'app.netlify.weather_web_app_by_sarfaraz.twa',
     hostName: 'weather-web-app-by-sarfaraz.netlify.app', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'Weather App', // The application name.
-    launcherName: 'WeatherApp', // The name shown on the Android Launcher.
+    name: 'weather_app', // The application name.
+    launcherName: 'weather_app', // The name shown on the Android Launcher.
     themeColor: '#0A2C69', // The color used for the status bar.
     navigationColor: '#000000', // The color used for the navigation bar.
     navigationColorDark: '#000000', // The color used for the dark navbar.
@@ -46,17 +46,17 @@ def twaManifest = [
     // 'customtabs' and 'webview'.
     fallbackType: 'customtabs',
     enableSiteSettingsShortcut: 'true',
-    orientation: 'portrait',
+    orientation: 'default',
 ]
 
 android {
     compileSdkVersion 33
     defaultConfig {
-        applicationId "localhost_5000.twa"
+        applicationId "app.netlify.weather_web_app_by_sarfaraz.twa"
         minSdkVersion 19
         targetSdkVersion 33
-        versionCode 2
-        versionName "2"
+        versionCode 1
+        versionName "1"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -72,7 +72,7 @@ android {
             // The URL the Web Manifest for the Progressive Web App that the TWA points to. This
             // is used by Chrome OS and Meta Quest to open the Web version of the PWA instead of
             // the TWA, as it will probably give a better user experience for non-mobile devices.
-            resValue "string", "webManifestUrl", 'http://127.0.0.1:5500/manifest.json'
+            resValue "string", "webManifestUrl", 'https://weather-web-app-by-sarfaraz.netlify.app/manifest.json'
         
 
         

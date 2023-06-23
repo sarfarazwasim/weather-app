@@ -101,7 +101,7 @@
     <integer name="google_play_services_version">12451000</integer>
     <integer name="splashScreenFadeOutDuration">300</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <string name="appName" translatable="false">Weather App</string>
+    <string name="appName" translatable="false">weather_app</string>
     <string name="app_name">Android Browser Helper</string>
     <string name="assetStatements">
     [{
@@ -140,15 +140,15 @@
     <string name="generatorApp" translatable="false">bubblewrap-cli</string>
     <string name="hostName" translatable="false">weather-web-app-by-sarfaraz.netlify.app</string>
     <string name="launchUrl" translatable="false">https://weather-web-app-by-sarfaraz.netlify.app/</string>
-    <string name="launcherName" translatable="false">WeatherApp</string>
+    <string name="launcherName" translatable="false">weather_app</string>
     <string name="manage_space_no_data_toast">This app holds no browsing data.</string>
     <string name="manage_space_not_supported_toast">This app\'s data is stored in %1$s.</string>
     <string name="no_provider_toast">Please install Chrome Stable 72 or later.</string>
-    <string name="orientation" translatable="false">portrait</string>
-    <string name="providerAuthority" translatable="false">localhost_5000.twa.fileprovider</string>
+    <string name="orientation" translatable="false">default</string>
+    <string name="providerAuthority" translatable="false">app.netlify.weather_web_app_by_sarfaraz.twa.fileprovider</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="update_chrome_toast">Please update to Chrome Stable 72 or later.</string>
-    <string name="webManifestUrl" translatable="false">http://127.0.0.1:5500/manifest.json</string>
+    <string name="webManifestUrl" translatable="false">https://weather-web-app-by-sarfaraz.netlify.app/manifest.json</string>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
     <style name="TextAppearance.Compat.Notification.Info">
         <item name="android:textSize">12sp</item>

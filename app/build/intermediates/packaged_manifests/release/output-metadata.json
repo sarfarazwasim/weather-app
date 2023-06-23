@@ -4,14 +4,14 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "localhost_5000.twa",
+  "applicationId": "app.netlify.weather_web_app_by_sarfaraz.twa",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 2,
-      "versionName": "2",
+      "versionCode": 1,
+      "versionName": "1",
       "outputFile": "AndroidManifest.xml"
     }
   ]

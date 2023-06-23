@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "localhost_5000.twa.test",
+  "applicationId": "app.netlify.weather_web_app_by_sarfaraz.twa.test",
   "variantName": "processDebugAndroidTestResources",
   "elements": [
     {

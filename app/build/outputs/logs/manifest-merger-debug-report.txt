@@ -39,7 +39,7 @@ INJECTED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/Andr
 INJECTED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:22:1-187:12
 INJECTED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:22:1-187:12
 	package
-		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:23:5-33
+		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:23:5-58
 		INJECTED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -118,7 +118,7 @@ ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/Android
 		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:68:17-50
 	android:name
 		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:67:17-83
-activity#localhost_5000.twa.LauncherActivity
+activity#app.netlify.weather_web_app_by_sarfaraz.twa.LauncherActivity
 ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:72:9-144:20
 	android:label
 		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:74:13-49
@@ -270,7 +270,7 @@ ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/Android
 		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:158:17-50
 	android:name
 		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:157:17-67
-service#localhost_5000.twa.DelegationService
+service#app.netlify.weather_web_app_by_sarfaraz.twa.DelegationService
 ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:161:9-176:19
 	android:enabled
 		ADDED from /Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:163:13-55

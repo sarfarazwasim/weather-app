@@ -22,9 +22,9 @@
      the abbreviated format.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="localhost_5000.twa"
-    android:versionCode="2"
-    android:versionName="2" >
+    package="app.netlify.weather_web_app_by_sarfaraz.twa"
+    android:versionCode="1"
+    android:versionName="1" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -44,7 +44,7 @@
     </queries>
 
     <application
-        android:name="localhost_5000.twa.Application"
+        android:name="app.netlify.weather_web_app_by_sarfaraz.twa.Application"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -69,7 +69,7 @@
                 android:value="@string/launchUrl" />
         </activity>
         <activity
-            android:name="localhost_5000.twa.LauncherActivity"
+            android:name="app.netlify.weather_web_app_by_sarfaraz.twa.LauncherActivity"
             android:alwaysRetainTaskState="true"
             android:exported="true"
             android:label="@string/launcherName" >
@@ -148,7 +148,7 @@
         </provider>
 
         <service
-            android:name="localhost_5000.twa.DelegationService"
+            android:name="app.netlify.weather_web_app_by_sarfaraz.twa.DelegationService"
             android:enabled="@bool/enableNotification"
             android:exported="@bool/enableNotification" >
             <meta-data

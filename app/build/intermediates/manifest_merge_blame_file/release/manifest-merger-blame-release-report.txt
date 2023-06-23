@@ -22,9 +22,9 @@
 22     the abbreviated format.
 23-->
 24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-25    package="localhost_5000.twa"
-26    android:versionCode="2"
-27    android:versionName="2" >
+25    package="app.netlify.weather_web_app_by_sarfaraz.twa"
+26    android:versionCode="1"
+27    android:versionName="1" >
 28
 29    <uses-sdk
 30        android:minSdkVersion="19"
@@ -59,7 +59,7 @@
 45
 46    <application
 46-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:35:5-186:19
-47        android:name="localhost_5000.twa.Application"
+47        android:name="app.netlify.weather_web_app_by_sarfaraz.twa.Application"
 47-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:36:9-35
 48        android:allowBackup="true"
 48-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:37:9-35
@@ -106,7 +106,7 @@
 69        </activity>
 70        <activity
 70-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:72:9-144:20
-71            android:name="localhost_5000.twa.LauncherActivity"
+71            android:name="app.netlify.weather_web_app_by_sarfaraz.twa.LauncherActivity"
 71-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:72:19-50
 72            android:alwaysRetainTaskState="true"
 72-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:73:13-49
@@ -261,7 +261,7 @@
 148
 149        <service
 149-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:161:9-176:19
-150            android:name="localhost_5000.twa.DelegationService"
+150            android:name="app.netlify.weather_web_app_by_sarfaraz.twa.DelegationService"
 150-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:162:13-46
 151            android:enabled="@bool/enableNotification"
 151-->/Users/sksarfarazwasim/Documents/Vue/weather_app/app/src/main/AndroidManifest.xml:163:13-55

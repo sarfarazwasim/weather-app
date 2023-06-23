@@ -1,3 +1,4 @@
+localhost_5000.twa.DelegationService
 androidx.drawerlayout.R$attr
 com.google.android.gms.internal.location.zzag
 com.google.androidbrowserhelper.trusted.SharedPreferencesTokenStore:
@@ -153,6 +154,7 @@ androidx.core.app.NotificationCompatSideChannelService
 androidx.core.view.DragStartHelper$OnDragStartListener
 androidx.core.view.NestedScrollingChild
 com.google.android.gms.common.data.DataBufferObserverSet
+app.netlify.weather_web_app_by_sarfaraz.twa.R$mipmap
 com.google.android.gms.common.util.DataUtils
 androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager:
     private void unregisterForLayoutCallback(android.view.View)
@@ -171,7 +173,6 @@ com.google.android.gms.internal.location.zzq:
 androidx.loader.content.ModernAsyncTask$InternalHandler
 androidx.core.view.animation.PathInterpolatorCompat
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
-localhost_5000.twa.R$style
 androidx.core.view.accessibility.AccessibilityViewCommand$MoveWindowArguments
 androidx.core.app.ActivityCompat$SharedElementCallback21Impl
 com.google.android.gms.common.server.response.zaa
@@ -250,6 +251,7 @@ com.google.android.gms.dynamite.zzc
 androidx.cursoradapter.widget.SimpleCursorAdapter$ViewBinder
 com.google.android.gms.dynamite.DynamiteModule$zza
 androidx.asynclayoutinflater.R$layout
+app.netlify.weather_web_app_by_sarfaraz.twa.R$dimen
 androidx.loader.app.LoaderManager$LoaderCallbacks
 androidx.browser.trusted.TrustedWebActivityCallback
 androidx.core.content.IntentCompat
@@ -281,11 +283,11 @@ com.google.android.gms.common.internal.Objects:
     private void <init>()
 androidx.annotation.InspectableProperty$FlagEntry
 com.google.android.gms.common.internal.ServiceSpecificExtraArgs
+localhost_5000.twa.LauncherActivity
 com.google.android.gms.common.api.internal.ListenerHolder:
     public final boolean hasListener()
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
 com.google.android.gms.common.internal.ISignInButtonCreator
-localhost_5000.twa.R$dimen
 com.google.androidbrowserhelper.trusted.TwaProviderPicker:
     public void <init>()
     static void restrictToPackageForTesting(java.lang.String)
@@ -321,6 +323,7 @@ com.google.android.gms.common.AccountPicker
 com.google.android.gms.common.internal.LegacyInternalGmsClient
 com.google.android.gms.common.SignInButton
 androidx.concurrent.futures.AbstractResolvableFuture$Waiter
+app.netlify.weather_web_app_by_sarfaraz.twa.R$id
 androidx.asynclayoutinflater.R$string
 androidx.core.view.inputmethod.InputConnectionCompat
 com.google.android.gms.common.api.internal.IStatusCallback$Stub
@@ -416,6 +419,7 @@ androidx.core.R$string
 androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListener
 androidx.arch.core.executor.DefaultTaskExecutor$1:
     private static final java.lang.String THREAD_NAME_STEM
+app.netlify.weather_web_app_by_sarfaraz.twa.R
 com.google.android.gms.common.server.response.FastJsonResponse
 androidx.core.util.Pools$SimplePool
 com.google.android.gms.internal.base.zag
@@ -470,6 +474,7 @@ com.google.android.gms.auth.api.signin.internal.Storage:
     public java.lang.String getSavedRefreshToken()
     public final void zaf()
     public void clear()
+app.netlify.weather_web_app_by_sarfaraz.twa.R$bool
 androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks:
     public void <init>()
 com.google.android.gms.common.api.internal.zaaf:
@@ -478,6 +483,7 @@ androidx.core.content.pm.PermissionInfoCompat$Protection
 com.google.android.gms.common.stats.StatsUtils
 androidx.lifecycle.ComputableLiveData$2
 androidx.legacy.coreui.R$attr
+app.netlify.weather_web_app_by_sarfaraz.twa.R$raw
 com.google.android.gms.common.internal.PendingResultUtil$ResultConverter
 androidx.core.util.DebugUtils:
     private void <init>()
@@ -747,7 +753,6 @@ androidx.core.internal.view.SupportSubMenu
 androidx.core.view.NestedScrollingParent3
 androidx.core.provider.SelfDestructiveThread$1
 androidx.core.graphics.PathParser$PathDataNode
-localhost_5000.twa.R$drawable
 androidx.core.view.ViewParentCompat
 com.google.android.gms.common.api.internal.BasePendingResult:
     protected void <init>(android.os.Looper)
@@ -946,6 +951,7 @@ androidx.versionedparcelable.CustomVersionedParcelable:
 com.google.android.gms.common.util.VisibleForTesting
 com.google.android.gms.common.api.internal.DataHolderNotifier
 com.google.android.gms.common.data.DataHolder$zaa
+app.netlify.weather_web_app_by_sarfaraz.twa.R$string
 com.google.androidbrowserhelper.trusted.PrefUtils:
     private void <init>()
     private static final java.lang.String SHARED_PREFERENCES_NAME
@@ -969,7 +975,6 @@ androidx.annotation.HalfFloat
 com.google.android.gms.location.zzf
 androidx.viewpager.widget.PagerTabStrip
 com.google.android.gms.common.util.NumberUtils
-localhost_5000.twa.R$attr
 com.google.android.gms.location.GeofencingApi:
     public abstract com.google.android.gms.common.api.PendingResult addGeofences(com.google.android.gms.common.api.GoogleApiClient,java.util.List,android.app.PendingIntent)
     public abstract com.google.android.gms.common.api.PendingResult addGeofences(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.GeofencingRequest,android.app.PendingIntent)
@@ -1073,12 +1078,12 @@ com.google.android.gms.location.FusedLocationProviderApi:
     public abstract com.google.android.gms.common.api.PendingResult flushLocations(com.google.android.gms.common.api.GoogleApiClient)
     public static final java.lang.String KEY_LOCATION_CHANGED
     public static final java.lang.String KEY_MOCK_LOCATION
-localhost_5000.twa.R$mipmap
 com.google.android.gms.common.api.ResultTransform:
     public void <init>()
     public final com.google.android.gms.common.api.PendingResult createFailedResult(com.google.android.gms.common.api.Status)
 androidx.cursoradapter.widget.ResourceCursorAdapter
 androidx.core.content.res.FontResourcesParserCompat$FamilyResourceEntry
+app.netlify.weather_web_app_by_sarfaraz.twa.R$styleable
 com.google.android.gms.internal.location.zzaf:
     private final com.google.android.gms.common.api.PendingResult zza(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.zzal)
     public final com.google.android.gms.common.api.PendingResult addGeofences(com.google.android.gms.common.api.GoogleApiClient,java.util.List,android.app.PendingIntent)
@@ -1097,6 +1102,7 @@ androidx.arch.core.executor.ArchTaskExecutor:
     public static java.util.concurrent.Executor getMainThreadExecutor()
     public static java.util.concurrent.Executor getIOThreadExecutor()
     public void setDelegate(androidx.arch.core.executor.TaskExecutor)
+app.netlify.weather_web_app_by_sarfaraz.twa.R$integer
 com.google.android.gms.dynamic.IFragmentWrapper$Stub$zza
 com.google.android.gms.common.server.converter.zaa
 androidx.annotation.InspectableProperty
@@ -1186,6 +1192,7 @@ com.google.androidbrowserhelper.trusted.QualityEnforcer:
     static final java.lang.String KEY_SUCCESS
 com.google.android.gms.common.api.internal.zaa
 com.google.android.gms.tasks.OnTokenCanceledListener
+app.netlify.weather_web_app_by_sarfaraz.twa.R$attr
 androidx.browser.customtabs.TrustedWebUtils:
     private void <init>()
     public static void launchBrowserSiteSettings(android.content.Context,androidx.browser.customtabs.CustomTabsSession,android.net.Uri)
@@ -1258,6 +1265,7 @@ androidx.core.text.PrecomputedTextCompat$PrecomputedTextFutureTask$PrecomputedTe
 androidx.core.widget.TintableCompoundButton
 androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
 com.google.androidbrowserhelper.locationdelegation.R$layout
+app.netlify.weather_web_app_by_sarfaraz.twa.R$layout
 androidx.print.PrintHelper$PrintUriAdapter$1$1
 androidx.slidingpanelayout.R
 androidx.viewpager.R$drawable
@@ -1306,7 +1314,6 @@ androidx.viewpager.widget.ViewPager$3
 androidx.core.app.FrameMetricsAggregator$FrameMetricsBaseImpl
 com.google.android.gms.internal.location.zzba
 com.google.android.gms.internal.base.zaf
-localhost_5000.twa.R$color
 com.google.android.gms.common.util.Hex
 com.google.android.gms.common.api.internal.zaav:
     public final com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl enqueue(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
@@ -1508,7 +1515,6 @@ com.google.android.gms.internal.location.zzao:
     public abstract void zza(com.google.android.gms.location.LocationSettingsRequest,com.google.android.gms.internal.location.zzaq,java.lang.String)
 androidx.core.view.MenuItemCompat$OnActionExpandListener
 androidx.asynclayoutinflater.R$id
-localhost_5000.twa.R$id
 androidx.loader.app.LoaderManagerImpl$LoaderObserver:
     void <init>(androidx.loader.content.Loader,androidx.loader.app.LoaderManager$LoaderCallbacks)
     public void onChanged(java.lang.Object)
@@ -1556,7 +1562,6 @@ com.google.android.gms.internal.common.zza:
 androidx.core.view.KeyEventDispatcher:
     private void <init>()
 androidx.core.view.NestedScrollingChild3
-localhost_5000.twa.R$xml
 com.google.android.gms.common.api.internal.zaaa:
     void <init>(com.google.android.gms.common.api.internal.zax,com.google.android.gms.common.api.internal.SignInConnectionListener)
     public final void onComplete(com.google.android.gms.tasks.Task)
@@ -1572,6 +1577,7 @@ com.google.android.gms.common.api.internal.zai:
 com.google.android.gms.common.server.response.zaj
 android.support.v4.os.ResultReceiver
 androidx.core.app.JobIntentService$JobWorkEnqueuer
+app.netlify.weather_web_app_by_sarfaraz.twa.R$color
 com.google.androidbrowserhelper.trusted.ChromeLegacyUtils:
     private void <init>()
     private static final java.lang.String CHROME_LOCAL_BUILD_PACKAGE
@@ -1652,8 +1658,8 @@ androidx.core.content.res.GrowingArrayUtils
 com.google.android.gms.internal.location.zzg
 com.google.android.gms.tasks.zzw
 androidx.annotation.IdRes
-androidx.drawerlayout.widget.DrawerLayout
 androidx.customview.widget.FocusStrategy$SequentialComparator
+androidx.drawerlayout.widget.DrawerLayout
 com.google.android.gms.tasks.zzf
 androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderApi19
 com.google.android.gms.location.LocationResult:
@@ -2047,6 +2053,8 @@ com.google.android.gms.internal.location.zzaa
 androidx.loader.content.ModernAsyncTask$2
 com.google.android.gms.common.internal.zzj:
     public static com.google.android.gms.common.internal.zzi zzb(android.os.IBinder)
+app.netlify.weather_web_app_by_sarfaraz.twa.BuildConfig
+app.netlify.weather_web_app_by_sarfaraz.twa.R$xml
 androidx.browser.browseractions.BrowserActionItem
 androidx.fragment.app.BackStackRecord:
     public int getId()
@@ -2191,7 +2199,6 @@ com.google.android.gms.common.api.internal.zaco:
     public void <init>(com.google.android.gms.common.api.internal.zacm,android.os.Looper)
     public final void handleMessage(android.os.Message)
     private final synthetic com.google.android.gms.common.api.internal.zacm zakw
-localhost_5000.twa.R$layout
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Constructor
 com.google.androidbrowserhelper.trusted.ChromeOsSupport:
     public void <init>()
@@ -2307,6 +2314,7 @@ com.google.android.gms.common.internal.SimpleClientAdapter:
     public void <init>(android.content.Context,android.os.Looper,int,com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks,com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener,com.google.android.gms.common.internal.ClientSettings,com.google.android.gms.common.api.Api$SimpleClient)
 androidx.core.provider.FontsContractCompat$FontInfo
 androidx.core.widget.NestedScrollView$SavedState
+localhost_5000.twa.Application
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout$OnRefreshListener
 com.google.android.gms.common.api.internal.GoogleServices
 androidx.annotation.RequiresFeature
@@ -2355,7 +2363,6 @@ androidx.core.R$id:
     public static final int time
     public static final int title
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$VersionField
-localhost_5000.twa.R$integer
 com.google.android.gms.common.internal.SignInButtonCreator
 com.google.android.gms.internal.location.zzan
 androidx.viewpager.widget.PagerTabStrip$1
@@ -2682,14 +2689,12 @@ com.google.androidbrowserhelper.locationdelegation.PermissionRequestActivity:
     private static final java.lang.String EXTRA_GRANT_RESULTS
     private static final java.lang.String LOCATION_PERMISSION
 androidx.fragment.app.FragmentTabHost
-localhost_5000.twa.R
 com.google.android.gms.tasks.zze
 androidx.core.view.ViewCompat$4:
     void frameworkSet(android.view.View,java.lang.CharSequence)
     boolean shouldUpdate(java.lang.CharSequence,java.lang.CharSequence)
     synthetic bridge void frameworkSet(android.view.View,java.lang.Object)
     synthetic bridge boolean shouldUpdate(java.lang.Object,java.lang.Object)
-localhost_5000.twa.BuildConfig
 com.google.android.gms.common.api.internal.zaca
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateThread
 com.google.android.gms.common.GooglePlayServicesNotAvailableException
@@ -3067,6 +3072,8 @@ com.google.android.gms.internal.base.zap:
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat
 com.google.android.gms.location.zzl
 com.google.android.gms.common.data.FreezableUtils
+app.netlify.weather_web_app_by_sarfaraz.twa.R$style
+app.netlify.weather_web_app_by_sarfaraz.twa.R$drawable
 androidx.browser.trusted.sharing.ShareTarget:
     public static androidx.browser.trusted.sharing.ShareTarget fromBundle(android.os.Bundle)
     public static final java.lang.String KEY_ACTION
@@ -3517,7 +3524,6 @@ androidx.core.view.accessibility.AccessibilityViewCommand$MoveAtGranularityArgum
 com.google.android.gms.location.places.zza
 com.google.android.gms.common.server.response.zad
 com.google.android.gms.location.ActivityRecognitionApi
-localhost_5000.twa.R$string
 androidx.core.view.inputmethod.InputConnectionCompat$OnCommitContentListener
 androidx.loader.R$string
 androidx.concurrent.futures.DirectExecutor
@@ -3573,7 +3579,6 @@ androidx.core.app.BundleCompat:
     private void <init>()
     public static android.os.IBinder getBinder(android.os.Bundle,java.lang.String)
 com.google.android.gms.common.data.DataBufferRef
-localhost_5000.twa.R$raw
 com.google.android.gms.internal.location.zzi
 com.google.android.gms.location.zzq
 com.google.android.gms.common.util.concurrent.NamedThreadFactory
@@ -3587,7 +3592,6 @@ androidx.coordinatorlayout.widget.DirectedAcyclicGraph
 com.google.android.gms.tasks.zzh
 androidx.core.view.DragStartHelper
 androidx.core.content.res.ResourcesCompat
-localhost_5000.twa.R$styleable
 com.google.android.gms.common.api.internal.zaa$zaa
 com.google.androidbrowserhelper.R$id
 androidx.swiperefreshlayout.R
@@ -3767,7 +3771,6 @@ com.google.android.gms.common.util.ArrayUtils:
     public static int[] toPrimitiveArray(java.util.Collection)
 androidx.core.database.sqlite.SQLiteCursorCompat
 androidx.core.view.PointerIconCompat
-localhost_5000.twa.R$bool
 com.google.android.gms.internal.location.zzam
 androidx.fragment.app.ListFragment$2
 androidx.annotation.ColorInt

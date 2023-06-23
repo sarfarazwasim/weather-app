@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="localhost_5000.twa.test">
+    package="app.netlify.weather_web_app_by_sarfaraz.twa.test">
 
     <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="33" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="localhost_5000.twa"
+                     android:targetPackage="app.netlify.weather_web_app_by_sarfaraz.twa"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for localhost_5000.twa"/>
+                     android:label="Tests for app.netlify.weather_web_app_by_sarfaraz.twa"/>
 </manifest>
