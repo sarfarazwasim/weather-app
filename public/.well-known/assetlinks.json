@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "app.netlify.weather_web_app_by_sarfaraz.twa",
+               "sha256_cert_fingerprints": ["37:A4:76:69:04:4A:97:05:A8:89:1B:FD:B4:18:6A:41:01:DB:B5:C8:3F:A0:91:58:7D:85:0E:01:E9:18:CB:EA"] }
+}]
