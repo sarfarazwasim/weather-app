@@ -1,0 +1,2 @@
+localhost_5000/twa/test/BuildConfig.java
+ localhost_5000.twa.test.BuildConfig

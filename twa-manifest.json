@@ -1,0 +1,45 @@
+{
+  "packageId": "localhost_5000.twa",
+  "host": "weather-web-app-by-sarfaraz.netlify.app",
+  "name": "Weather App",
+  "launcherName": "WeatherApp",
+  "display": "fullscreen",
+  "themeColor": "#0A2C69",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#0A2C69",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "http://127.0.0.1:5500/src/assets/manifest/icon-256x256.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "/Users/sksarfarazwasim/Documents/Vue/weather_app/android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "2",
+  "appVersionCode": 2,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "http://127.0.0.1:5500/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": {
+      "enabled": true
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://weather-web-app-by-sarfaraz.netlify.app/",
+  "minSdkVersion": 19,
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "2"
+}
