@@ -12,8 +12,8 @@ export const useMainStore = defineStore("mainStore", {
     weekData: [],
     searchList: [],
     currentCity: {
-      name: "Bengaluru",
-      country: "IN",
+      name: "",
+      country: "",
     },
     isMainLoaderActive: false,
   }),
@@ -85,10 +85,10 @@ export const useMainStore = defineStore("mainStore", {
       axios
         .get(api.cityNameFromLocation(latitude, longitude))
         .then(function (res) {
-          if (res.statusText === "OK") {
+          if (res.status === 200) {
             self.currentCity = {
-              name: res.data.city,
-              country: res.data.countryCode,
+              name: res.data?.city || "",
+              country: res.data?.countryCode || "",
             };
             cb?.();
             self.isMainLoaderActive = false;
