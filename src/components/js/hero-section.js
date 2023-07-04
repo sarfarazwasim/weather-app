@@ -12,9 +12,8 @@ export default {
       Math.round(mainStore.currentWeather.feels_like || 20)
     );
     const date = computed(() => Math.round(mainStore.currentWeather.dt * 1000));
-    const getIconPath = computed(
-      () => require(`@/assets/icons/116.svg`)
-      // require(`@/assets/icons/${mainStore.iconName}.svg`)
+    const getIconPath = computed(() =>
+      require(`@/assets/icons/${mainStore.iconName}.svg`)
     );
     const getDescription = computed(() => mainStore.weatherDescription);
     const maxTemp = computed(() => Math.round(mainStore.minMaxTemp.max || 0));
