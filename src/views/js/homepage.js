@@ -22,6 +22,7 @@ export default {
     let longitude = ref(77.6033);
 
     function getUserLocation() {
+      mainStore.updateCircularLoaderValue(true);
       navigator.geolocation.getCurrentPosition(
         (position) => {
           latitude.value = position.coords.latitude;

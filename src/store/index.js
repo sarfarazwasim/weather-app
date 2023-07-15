@@ -29,6 +29,9 @@ export const useMainStore = defineStore("mainStore", {
     },
   },
   actions: {
+    updateCircularLoaderValue(value) {
+      this.isMainLoaderActive = value;
+    },
     updateCity(city) {
       this.currentCity = {
         name: city.name,
