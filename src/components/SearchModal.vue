@@ -1,5 +1,5 @@
 <template>
-  <div class="search-modal">
+  <div class="search-modal" :class="isModalVisible ? '' : 'hidden'">
     <div class="container">
       <div class="input_wrapper">
         <SearchIcon />
@@ -61,6 +61,7 @@
 
 <style lang="scss" scoped>
 .search-modal {
+  transition: all 0.5s linear;
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -72,6 +73,7 @@
   color: white;
   top: 0;
   .container {
+    transition: all 0.5s linear;
     position: absolute;
     top: 20%;
     color: white;
@@ -179,6 +181,21 @@
       top: -32px;
       right: 10px;
     }
+  }
+}
+.search-modal.hidden {
+  backdrop-filter: blur(0px);
+  animation: hide-it 0.5s 0.5s linear forwards;
+  @keyframes hide-it {
+    from {
+      z-index: 1;
+    }
+    to {
+      z-index: 0;
+    }
+  }
+  .container {
+    top: -35%;
   }
 }
 </style>

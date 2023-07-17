@@ -5,13 +5,14 @@
       <CalendarOutline />
     </div>
     <div
-      v-for="item in weekData"
+      v-for="(item, index) in weekData"
       :key="item.dt"
       class="daily-wrapper display-flex jc-between m-top-16"
     >
       <div class="display-flex align-center jc-start">
         <div>
-          <div>{{ $filters.dateFormat(item.dt * 1000, "MMM D") }}</div>
+          <div v-if="index === 0">Tomorrow</div>
+          <div v-else>{{ $filters.dateFormat(item.dt * 1000, "MMM D") }}</div>
           <div class="font-12">
             {{ $filters.capitalize(item.weather[0].description) }}
           </div>

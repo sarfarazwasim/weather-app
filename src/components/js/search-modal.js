@@ -6,6 +6,12 @@ import SearchIcon from "vue-material-design-icons/Magnify.vue";
 export default {
   name: "SearchModal",
   emits: ["closeSearchModal"],
+  props: {
+    isModalVisible: {
+      default: false,
+      required: true,
+    },
+  },
   components: {
     CloseIcon,
     CircularCloseIcon,
@@ -22,6 +28,8 @@ export default {
       (val) => {
         if (val.trim().length > 2) {
           handleSearch();
+        } else {
+          mainStore.searchList = [];
         }
       }
     );
@@ -54,6 +62,9 @@ export default {
       mainStore.updateCity(city);
       mainStore.updateLocation(city.coord.lat, city.coord.lon);
       mainStore.getCurrentWeatherByLocation(city.coord.lat, city.coord.lon);
+      setTimeout(() => {
+        clearSearch();
+      }, 1000);
       closeModal();
     };
     return {

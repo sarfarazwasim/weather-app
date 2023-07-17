@@ -14,7 +14,7 @@
     </div>
     <Teleport to="#app">
       <SearchModal
-        v-if="showSearchModal"
+        :is-modal-visible="showSearchModal"
         @closeSearchModal="toggleSearchModal(false)"
       />
     </Teleport>
