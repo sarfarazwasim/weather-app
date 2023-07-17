@@ -1,6 +1,6 @@
 <!-- snow -->
 <svg width="252" height="263" viewBox="0 0 252 263" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="">
+<g class="rotating-snow">
 <path d="M126.891 41.2209L126.891 237.324" stroke="white" stroke-width="10" stroke-linecap="round"/>
 <path d="M126.499 89.1579L160.272 54.2949" stroke="white" stroke-width="10" stroke-linecap="round"/>
 <path d="M126.499 89.1579L91.6357 54.2949" stroke="white" stroke-width="10" stroke-linecap="round"/>
@@ -17,7 +17,7 @@
 <path d="M78.5063 112.508L31.4276 124.325" stroke="white" stroke-width="10" stroke-linecap="round"/>
 <path d="M78.5065 112.508L65.7457 64.8841" stroke="white" stroke-width="10" stroke-linecap="round"/>
 </g>
-<g filter="url(#filter1_f_240_2772)">
+<g  class="falling-snow-drop" filter="url(#filter1_f_240_2772)">
 <path d="M54.8838 2V15.394" stroke="white" stroke-linecap="round"/>
 <path d="M54.5938 5.26796L56.7727 4.17896" stroke="white" stroke-linecap="round"/>
 <path d="M54.5937 5.26796L51.3257 4.17896" stroke="white" stroke-linecap="round"/>
@@ -34,7 +34,7 @@
 <path d="M51.5786 6.86902L48.3631 7.67644" stroke="white" stroke-linecap="round"/>
 <path d="M51.5785 6.86901L50.707 3.61651" stroke="white" stroke-linecap="round"/>
 </g>
-<g filter="url(#filter2_f_240_2772)">
+<g  class="falling-snow-drop" filter="url(#filter2_f_240_2772)">
 <path d="M239.669 31.655V54.615" stroke="white" stroke-linecap="round"/>
 <path d="M238.712 36.863L243.07 35.774" stroke="white" stroke-linecap="round"/>
 <path d="M238.713 36.863L233.266 35.774" stroke="white" stroke-linecap="round"/>
@@ -51,7 +51,7 @@
 <path d="M234.004 40.0022L228.492 41.3855" stroke="white" stroke-linecap="round"/>
 <path d="M234.004 40.0022L232.51 34.426" stroke="white" stroke-linecap="round"/>
 </g>
-<g filter="url(#filter3_f_240_2772)">
+<g class="falling-snow-2" filter="url(#filter3_f_240_2772)">
 <path d="M225.526 200.522V219.372" stroke="white" stroke-linecap="round"/>
 <path d="M224.549 204.64L227.817 203.551" stroke="white" stroke-linecap="round"/>
 <path d="M224.549 204.64L220.191 203.551" stroke="white" stroke-linecap="round"/>
@@ -68,7 +68,7 @@
 <path d="M220.876 207.375L216.351 208.51" stroke="white" stroke-linecap="round"/>
 <path d="M220.876 207.375L219.65 202.797" stroke="white" stroke-linecap="round"/>
 </g>
-<g filter="url(#filter4_f_240_2772)">
+<g class="falling-snow-3" filter="url(#filter4_f_240_2772)">
 <path d="M70.7324 244.1V260.705" stroke="white" stroke-linecap="round"/>
 <path d="M69.8457 248.218L73.1137 247.129" stroke="white" stroke-linecap="round"/>
 <path d="M69.8456 248.218L66.5776 247.129" stroke="white" stroke-linecap="round"/>
@@ -85,7 +85,7 @@
 <path d="M66.6357 250.136L62.6492 251.137" stroke="white" stroke-linecap="round"/>
 <path d="M66.6358 250.136L65.5553 246.103" stroke="white" stroke-linecap="round"/>
 </g>
-<g filter="url(#filter5_f_240_2772)">
+<g class="falling-snow-4" filter="url(#filter5_f_240_2772)">
 <path d="M8.07568 174.374V187.842" stroke="white" stroke-linecap="round"/>
 <path d="M7.74658 177.403L9.92558 176.314" stroke="white" stroke-linecap="round"/>
 <path d="M7.74652 177.403L4.47852 176.314" stroke="white" stroke-linecap="round"/>
@@ -102,6 +102,107 @@
 <path d="M4.75195 179.27L1.51919 180.081" stroke="white" stroke-linecap="round"/>
 <path d="M4.75173 179.27L3.87547 176" stroke="white" stroke-linecap="round"/>
 </g>
+
+<style>
+  .rotating-snow {
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          animation: rotating 15s linear infinite;
+        }
+
+        @keyframes rotating {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+  .falling-snow-drop {
+          transform: translateY(-100px)
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          animation: large-fall 5s 2s linear infinite, fall-delay 2s linear forwards;
+        }
+
+        @keyframes large-fall {
+          0% {
+            transform: translateX(0px) translateY(-40px) scale(1);
+          }
+          50% {
+            transform: translateX(0px) translateY(100px) scale(1);
+          }
+          100% {
+            transform: translateX(0px) translateY(240px) scale(1);
+          }
+        }
+
+        @keyframes fall-delay {
+          0% {
+            opacity: 0;
+            transform: translateY(-100px);
+          }
+          99% {
+            opacity: 0;
+            transform: translateY(-100px);
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+    .falling-snow-2 {
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          animation: small-fall-2 5s linear infinite;
+        }
+
+        @keyframes small-fall-2 {
+          0% {
+            transform: translateX(0px) translateY(-240px) scale(1);
+          }
+          50% {
+            transform: translateX(0px) translateY(-90px) scale(1);
+          }
+          100% {
+            transform: translateX(0px) translateY(60px) scale(1);
+          }
+        }
+    .falling-snow-3 {
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          animation: small-fall-3 5s linear infinite;
+        }
+
+        @keyframes small-fall-3 {
+          0% {
+            transform: translateX(0px) translateY(-240px) scale(1);
+          }
+          50% {
+            transform: translateX(0px) translateY(-90px) scale(1);
+          }
+          100% {
+            transform: translateX(0px) translateY(60px) scale(1);
+          }
+        }
+    .falling-snow-4 {
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          animation: small-fall-4 5s linear infinite;
+        }
+
+        @keyframes small-fall-4 {
+          0% {
+            transform: translateX(0px) translateY(-200px) scale(1);
+          }
+          50% {
+            transform: translateX(0px) translateY(-50px) scale(1);
+          }
+          100% {
+            transform: translateX(0px) translateY(100px) scale(1);
+          }
+        }
+      }
+</style>
 <defs>
 <filter id="filter0_f_240_2772" x="22.4258" y="32.2209" width="203.282" height="214.103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
