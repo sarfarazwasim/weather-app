@@ -61,7 +61,7 @@
 
 <style lang="scss" scoped>
 .search-modal {
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -73,7 +73,7 @@
   color: white;
   top: 0;
   .container {
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     position: absolute;
     top: 20%;
     color: white;
@@ -185,7 +185,7 @@
 }
 .search-modal.hidden {
   backdrop-filter: blur(0px);
-  animation: hide-it 0.5s 0.5s linear forwards;
+  animation: hide-it 0.5s 0.3s linear forwards;
   @keyframes hide-it {
     from {
       z-index: 1;
