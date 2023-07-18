@@ -38,6 +38,7 @@
     padding: 6px 8px 4px 8px;
     border-radius: 8px;
     height: 32px;
+    cursor: pointer;
     .down-icon {
       transform: scale(0.7);
     }
@@ -52,6 +53,7 @@
   .right-items {
     display: flex;
     font-size: 14px;
+    cursor: pointer;
   }
 }
 </style>
