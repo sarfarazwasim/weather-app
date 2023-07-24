@@ -10,7 +10,7 @@ export default {
   setup() {
     const mainStore = useMainStore();
     const weekData = computed(() => {
-      const list = mainStore.weekData;
+      const list = JSON.parse(JSON.stringify(mainStore.weekData));
       list.shift();
       return list;
     });
