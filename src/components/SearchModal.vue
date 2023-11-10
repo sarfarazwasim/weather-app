@@ -195,7 +195,7 @@
     }
   }
   .container {
-    top: -37%;
+    top: -300px;
   }
 }
 </style>
