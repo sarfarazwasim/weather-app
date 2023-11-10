@@ -62,6 +62,11 @@ export default {
     const showLoader = computed(() => mainStore.isMainLoaderActive);
     const refreshWeatherData = () => {
       mainStore.getCurrentWeatherByLocation(undefined, undefined);
+      event("refresh data", {
+        event_category: "refresh",
+        event_label: "User refreshed data",
+        value: 1,
+      });
     };
     getUserLocation();
 

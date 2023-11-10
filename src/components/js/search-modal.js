@@ -1,4 +1,5 @@
 import { computed, ref, watch } from "vue";
+import { event } from "vue-gtag";
 import { useMainStore } from "@/store/index.js";
 import CircularCloseIcon from "vue-material-design-icons/CloseCircleOutline.vue";
 import CloseIcon from "vue-material-design-icons/Close.vue";
@@ -51,6 +52,11 @@ export default {
     const mainStore = useMainStore();
     function searchCities() {
       mainStore.searchCity(searchText.value, resetTimer);
+      event("city search", {
+        event_category: "search",
+        event_label: "User searched for city",
+        value: searchText.value,
+      });
     }
     const searchResults = computed(() => mainStore.searchList);
 
@@ -66,6 +72,11 @@ export default {
         clearSearch();
       }, 1000);
       closeModal();
+      event("city selection", {
+        event_category: "search",
+        event_label: "User selected a location",
+        value: city,
+      });
     };
     return {
       searchText,
