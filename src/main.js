@@ -11,5 +11,5 @@ const app = createApp(App);
 app.use(router).use(createPinia()).mount("#app");
 app.config.globalProperties.$filters = filters;
 app.use(VueGtag, {
-  config: { id: "G-6NRCQ4S44Z" },
+  config: { id: "G-MCHN8K2WXR" },
 });
